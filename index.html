@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Fruits Shop - Asm</title>
+     <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/themewagon/fruitkha/main/assets/img/favicon.png">
+     <link rel="stylesheet" href="./css/style.css">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+
+<body>
+     <header>
+          <a href="#" class="logo">
+               <img src="https://raw.githubusercontent.com/themewagon/fruitkha/main/assets/img/logo.png" width="150px">
+          </a>
+          <ul class="navmenu">
+               <li><a href="#" style="color: #F28123;">Home</a></li>
+               <li><a href="assets/shop.html">Shop</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="nav-icon">
+               <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+               <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+          </ul>
+     </header>
+     <!-- header mobile -->
+     <header class="new-header">
+          <a href="#" class="logo">
+              <img src="https://raw.githubusercontent.com/themewagon/fruitkha/main/assets/img/logo.png" width="150px">
+          </a>
+          <div class="menu-toggle" id="mobile-menu">
+               <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul class="navmenu" id="navmenu">
+              <li><a href="#" style="color: #F28123;">Home</a></li>
+              <li><a href="assets/shop.html">Shop</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="nav-icon" id="nav-icon">
+              <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+          </ul>
+      </header>
+     <!-- start section main  -->
+     <section class="main_bg">
+          <div class="main_content">
+               <p>FRESH & ORGANIC</p>
+               <h3>Delicious Seasonal Fruits</h3>
+               <button>Fruit Collection</button>
+               <button id="buton" class="buton2">Contact us</button>
+          </div>
+     </section>
+     <!-- end section main -->
+     <section class="hotline-section">
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-4 hl-column">
+                         <svg fill="#f28123" width="75px" height="75px" viewBox="0 0 32 32"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                              <g id="SVGRepo_iconCarrier">
+                                   <path
+                                        d="M 0 6 L 0 8 L 19 8 L 19 23 L 12.84375 23 C 12.398438 21.28125 10.851563 20 9 20 C 7.148438 20 5.601563 21.28125 5.15625 23 L 4 23 L 4 18 L 2 18 L 2 25 L 5.15625 25 C 5.601563 26.71875 7.148438 28 9 28 C 10.851563 28 12.398438 26.71875 12.84375 25 L 21.15625 25 C 21.601563 26.71875 23.148438 28 25 28 C 26.851563 28 28.398438 26.71875 28.84375 25 L 32 25 L 32 16.84375 L 31.9375 16.6875 L 29.9375 10.6875 L 29.71875 10 L 21 10 L 21 6 Z M 1 10 L 1 12 L 10 12 L 10 10 Z M 21 12 L 28.28125 12 L 30 17.125 L 30 23 L 28.84375 23 C 28.398438 21.28125 26.851563 20 25 20 C 23.148438 20 21.601563 21.28125 21.15625 23 L 21 23 Z M 2 14 L 2 16 L 8 16 L 8 14 Z M 9 22 C 10.117188 22 11 22.882813 11 24 C 11 25.117188 10.117188 26 9 26 C 7.882813 26 7 25.117188 7 24 C 7 22.882813 7.882813 22 9 22 Z M 25 22 C 26.117188 22 27 22.882813 27 24 C 27 25.117188 26.117188 26 25 26 C 23.882813 26 23 25.117188 23 24 C 23 22.882813 23.882813 22 25 22 Z">
+                                   </path>
+                              </g>
+                         </svg>
+                         <h3>Free shipping</h3>
+                         <p>When order over $75</p>
+                    </div>
+                    <div class="col-md-4 hl-column">
+                         <svg width="75px" height="75px" viewBox="0 -0.5 25 25" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" stroke="#b23434">
+                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                              <g id="SVGRepo_iconCarrier">
+                                   <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.36343 6.36195C7.24343 5.43495 7.55443 5.17495 7.92943 5.05395C8.18895 4.98595 8.46112 4.98217 8.72243 5.04295C9.06643 5.14295 9.15743 5.21895 10.2854 6.34295C11.2764 7.32995 11.3754 7.43695 11.4704 7.62995C11.6521 7.96873 11.6805 8.36894 11.5484 8.72995C11.4484 9.00495 11.3064 9.18695 10.7054 9.78995L10.3134 10.183C10.2105 10.2876 10.1863 10.4464 10.2534 10.577C11.1244 12.0628 12.36 13.3019 13.8434 14.177C14.0142 14.2684 14.2245 14.2389 14.3634 14.104L14.7404 13.733C14.9734 13.4941 15.2202 13.2691 15.4794 13.059C15.8866 12.809 16.3939 12.7867 16.8214 13C17.0304 13.1 17.0994 13.162 18.1214 14.182C19.1754 15.233 19.2054 15.266 19.3214 15.507C19.5397 15.9059 19.5374 16.3891 19.3154 16.786C19.2024 17.01 19.1334 17.091 18.5404 17.697C18.1824 18.063 17.8454 18.397 17.7914 18.446C17.3022 18.851 16.6746 19.0497 16.0414 19C14.883 18.8944 13.7617 18.5363 12.7564 17.951C10.5296 16.7711 8.63383 15.0521 7.24243 12.951C6.93937 12.5112 6.66994 12.0492 6.43643 11.569C5.81001 10.4953 5.48653 9.27189 5.50043 8.02895C5.54825 7.37871 5.86008 6.77637 6.36343 6.36195Z"
+                                        stroke="#f28123" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                              </g>
+                         </svg>
+                         <h3>24/7 Support</h3>
+                         <p>Get support all day</p>
+                    </div>
+                    <div class="col-md-4 hl-column">
+                         <svg width="75px" height="75px" viewBox="0 0 64.00 64.00" xmlns="http://www.w3.org/2000/svg"
+                              stroke-width="3" stroke="#f28123" fill="none">
+                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                              <g id="SVGRepo_iconCarrier">
+                                   <path d="M54.89,26.73A23.52,23.52,0,0,1,15.6,49" stroke-linecap="round"></path>
+                                   <path d="M9,37.17a23.75,23.75,0,0,1-.53-5A23.51,23.51,0,0,1,48.3,15.2"
+                                        stroke-linecap="round"></path>
+                                   <polyline points="37.73 16.24 48.62 15.44 47.77 5.24" stroke-linecap="round">
+                                   </polyline>
+                                   <polyline points="25.91 47.76 15.03 48.56 15.88 58.76" stroke-linecap="round">
+                                   </polyline>
+                              </g>
+                         </svg>
+                         <h3>Refund</h3>
+                         <p>Get refund within 3 days!</p>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- end section  -->
+     <section class="our-product">
+          <h3 class="out-product-title"><span style="color: #F28123;">Our</span> Products</h3>
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-4 colum_product">
+                         <div class="product_card">
+                              <img src="https://raw.githubusercontent.com/themewagon/fruitkha/main/assets/img/products/product-img-1.jpg"
+                                   alt="">
+                              <h3>Strawberry</h3>
+                              <p>Per Kg</p>
+                              <h3>85$</h3>
+                              <button style="background-color: #F28123; color: #fff;" class="btn hove-buton-prd"><i
+                                        class="fa-solid fa-cart-shopping"></i> add to cart</button>
+
+                         </div>
+                    </div>
+                    <div class="col-md-4 colum_product">
+                         <div class="product_card">
+                              <img src="https://raw.githubusercontent.com/themewagon/fruitkha/main/assets/img/products/product-img-2.jpg"
+                                   alt="">
+                              <h3>Berry</h3>
+                              <p>Per Kg</p>
+                              <h3>85$</h3>
+                              <button style="background-color: #F28123; color: #fff;" class="btn hove-buton-prd"><i
+                                        class="fa-solid fa-cart-shopping"></i> add to cart</button>
+
+                         </div>
+                    </div>
+                    <div class="col-md-4 colum_product">
+                         <div class="product_card">
+                              <img src="https://raw.githubusercontent.com/themewagon/fruitkha/main/assets/img/products/product-img-3.jpg"
+                                   alt="">
+                              <h3>Lemon</h3>
+                              <p>Per Kg</p>
+                              <h3>85$</h3>
+                              <button style="background-color: #F28123; color: #fff;" class="btn hove-buton-prd"><i
+                                        class="fa-solid fa-cart-shopping"></i> add to cart</button>
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-4 colum_product">
+                         <div class="product_card">
+                              <img src="https://raw.githubusercontent.com/themewagon/fruitkha/main/assets/img/products/product-img-1.jpg"
+                                   alt="">
+                              <h3>Strawberry</h3>
+                              <p>Per Kg</p>
+                              <h3>85$</h3>
+                              <button style="background-color: #F28123; color: #fff;" class="btn hove-buton-prd"><i
+                                        class="fa-solid fa-cart-shopping"></i> add to cart</button>
+
+                         </div>
+                    </div>
+                    <div class="col-md-4 colum_product">
+                         <div class="product_card">
+                              <img src="https://raw.githubusercontent.com/themewagon/fruitkha/main/assets/img/products/product-img-2.jpg"
+                                   alt="">
+                              <h3>Berry</h3>
+                              <p>Per Kg</p>
+                              <h3>85$</h3>
+                              <button style="background-color: #F28123; color: #fff;" class="btn hove-buton-prd"><i
+                                        class="fa-solid fa-cart-shopping"></i> add to cart</button>
+
+                         </div>
+                    </div>
+                    <div class="col-md-4 colum_product">
+                         <div class="product_card">
+                              <img src="https://raw.githubusercontent.com/themewagon/fruitkha/main/assets/img/products/product-img-3.jpg"
+                                   alt="">
+                              <h3>Lemon</h3>
+                              <p>Per Kg</p>
+                              <h3>85$</h3>
+                              <button style="background-color: #F28123; color: #fff;" class="btn hove-buton-prd"><i
+                                        class="fa-solid fa-cart-shopping"></i> add to cart</button>
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- end section  -->
+     <section class="video-brand">
+          <div class="video-container">
+               <video src="video/2583475-hd_1920_1080_24fps.mp4" id="video" autoplay loop muted>
+               </video>
+          </div>
+     </section>
+     <!-- end section  -->
+     <section class="comment-brand">
+          <div class="mycomment">
+               <img src="https://themewagon.github.io/fruitkha/assets/img/avaters/avatar2.png">
+               <h3>David Silva</h3>
+               <p>Local shop owner</p>
+               <q>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for
+                    previewing layouts and visual mockups.</q>
+               <span>"</span>
+          </div>
+     </section>
+     <!-- end sectioon -->
+     <!-- logo nhà tài trợ -->
+      <section class="ads-brand">
+          <div class="slider">
+               <div class="slides">
+                   <img src="https://raw.githubusercontent.com/themewagon/fruitkha/main/assets/img/company-logos/1.png" class="slide" alt="Image 1">
+                   <img src="https://raw.githubusercontent.com/themewagon/fruitkha/main/assets/img/company-logos/2.png" class="slide" alt="Image 2">
+                   <img src="https://raw.githubusercontent.com/themewagon/fruitkha/main/assets/img/company-logos/3.png" class="slide" alt="Image 3">
+                   <img src="https://raw.githubusercontent.com/themewagon/fruitkha/main/assets/img/company-logos/4.png" class="slide" alt="Image 4">
+               </div>
+           </div>
+      </section>
+     <!-- kết thúc section logo nhà tài trợ -->
+     <!-- end sectionn -->
+     <footer>
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+               <!-- Section: Links -->
+               <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                         <!-- Grid column -->
+                         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                              <h6 class="text-uppercase mb-4 font-weight-bold bold_title">
+                                   FRUITKHA
+                              </h6>
+                              <p>
+                                   Here you can use rows and columns to organize your footer
+                                   content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                   elit.
+                              </p>
+                         </div>
+                         <!-- Grid column -->
+
+                         <hr class="w-100 clearfix d-md-none" />
+
+                         <!-- Grid column -->
+                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 prd-div">
+                              <h6 class="text-uppercase mb-4 font-weight-bold bold_title">Products</h6>
+                              <p>
+                                   <a href="#">Shop</a>
+                              </p>
+                              <p>
+                                   <a href="#">Contact</a>
+                              </p>
+                              <p>
+                                   <a href="#">About</a>
+                              </p>
+                              <p>
+                                   <a href="#">Blog</a>
+                              </p>
+                         </div>
+                         <!-- Grid column -->
+
+                         <!-- <hr class="w-100 clearfix d-md-none" /> -->
+
+                         <!-- Grid column -->
+                         <hr class="w-100 clearfix d-md-none" />
+
+                         <!-- Grid column -->
+                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                              <h6 class="text-uppercase mb-4 font-weight-bold bold_title">Contact</h6>
+                              <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                              <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                         </div>
+                         <!-- Grid column -->
+
+                         <!-- Grid column -->
+                         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                              <h6 class="text-uppercase mb-4 font-weight-bold bold_title">Follow us</h6>
+
+                              <!-- Facebook -->
+                              <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!"
+                                   role="button"><i class="fab fa-facebook-f"></i></a>
+
+                              <!-- Twitter -->
+                              <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!"
+                                   role="button"><i class="fab fa-twitter"></i></a>
+
+                              <!-- Google -->
+                              <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!"
+                                   role="button"><i class="fab fa-google"></i></a>
+
+                              <!-- Instagram -->
+                              <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!"
+                                   role="button"><i class="fab fa-instagram"></i></a>
+
+                              <!-- Linkedin -->
+                              <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!"
+                                   role="button"><i class="fab fa-linkedin-in"></i></a>
+                              <!-- Github -->
+                              <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!"
+                                   role="button"><i class="fab fa-github"></i></a>
+                         </div>
+                    </div>
+               </section>
+          </div>
+          <div class="text-center p-3 end-ft">
+               © 2024 Copyright
+               <a class="text-white" href="index.html"> Fruitshop</a>
+          </div>
+     </footer>
+     <script src="js/app.js"></script>
+     <script src="js/responsive.js"></script>
+</body>
+
+</html>
