@@ -7,11 +7,53 @@
      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
      <link rel="stylesheet" href="css/form.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+     #loading {
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+     }
+
+     .spinner {
+          border: 16px solid #f3f3f3;
+          border-top: 16px solid #f28123;
+          border-radius: 50%;
+          width: 120px;
+          height: 120px;
+          animation: spin 1s linear infinite;
+     }
+
+     @keyframes spin {
+          0% {
+               transform: rotate(0deg);
+          }
+
+          100% {
+               transform: rotate(360deg);
+          }
+     }
+</style>
 
 <body>
+     <div id="loading">
+          <div class="spinner"></div>
+     </div>
      <section class="container">
-          <header>Login Form</header>
+          <a href="index.html" style="text-decoration: none; font-size: 20px; color: #051922;" class=""><i
+                    class="fa-solid fa-house"></i></a>
+          <header>Login Form
+          </header>
           <form class="form">
                <div class="input-box">
                     <label>User Name</label>
@@ -26,6 +68,14 @@
           </form>
      </section>
      <script src="js/log.js"></script>
+     <script>
+          document.addEventListener("DOMContentLoaded", function () {
+               setTimeout(function () {
+                    document.getElementById("loading").style.display = "none";
+                    document.getElementById("content").style.display = "block";
+               }, 1000);
+          });
+     </script>
 </body>
 
 </html>

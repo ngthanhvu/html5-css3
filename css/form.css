@@ -12,7 +12,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: #051922;
+  /* background: #051922; */
+  background-image: radial-gradient(circle, #051922, #004b59, #008370, #00bb5d, #a8eb12);
 }
 .container {
   position: relative;
@@ -106,10 +107,11 @@ body {
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: #051922;
+  /* background: #051922; */
+  background-image: radial-gradient(circle, #051922, #004b59, #008370, #00bb5d, #a8eb12);
 }
 .form button:hover {
-  background: #f28123;
+  background: #051922;
 }
 /*Responsive*/
 @media screen and (max-width: 500px) {

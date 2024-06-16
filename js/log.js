@@ -17,6 +17,7 @@ document.getElementById("login-btn").addEventListener("click", (event) => {
      const users = JSON.parse(localStorage.getItem("user")) || [];
      const founduser = users.find((user) => user.username === username && user.password === password);
      if (founduser) {
+          localStorage.setItem("login", founduser.username);
           Swal.fire({
                title: "Thành công!",
                text: "Đăng nhập thành công",
