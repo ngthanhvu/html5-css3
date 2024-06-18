@@ -30,9 +30,20 @@ setInterval(nextSlide, 3000);
 showSlide(currentSlide);
 
 // hiệu ứng loading
-document.addEventListener("DOMContentLoaded", function() {
-     setTimeout(function() {
-         document.getElementById("loading").style.display = "none";
-         document.getElementById("content").style.display = "block";
-     }, 1000);
- });
+document.addEventListener("DOMContentLoaded", function () {
+     setTimeout(function () {
+          document.getElementById("loading").style.display = "none";
+          document.getElementById("content").style.display = "block";
+     }, 500);
+});
+
+// 
+document.addEventListener("DOMContentLoaded", () => {
+     let validatelogin = document.getElementById("logoutclass");
+     let loginstatus = localStorage.getItem("login");
+     if (loginstatus === "true") {
+          validatelogin.style.display = "block";
+     } else {
+          validatelogin.style.display = "none";
+     }
+})
